@@ -34,6 +34,47 @@ main {
 .page-content {
   padding: 100px 0; }
 
+.year {
+  border-top: 1px solid #D2CCA1;
+  color: #D2CCA1;
+  margin: 0 -3em -4.5ex -1em;
+  padding-top: 1ex;
+  text-align: right; }
+
+.post-title {
+  font-size: 42px;
+  letter-spacing: -1px;
+  line-height: 1;
+  margin-bottom: 10px;
+  margin-top: 0; }
+
+.post-meta {
+  color: #828282;
+  font-size: .875rem;
+  margin-bottom: 0px; }
+
+.author-highlight {
+  font-family: 'Vollkorn Bold', serif;
+  font-weight: bolder; }
+
+.post-list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.post-header {
+  margin-bottom: 40px; }
+
+.header-bar {
+  border-bottom: 1px solid #ccc;
+  font-size: 20px;
+  opacity: 0.75;
+  width: 100%;
+  text-align: center;
+  padding-top: 25px;
+  line-height: 3em;
+  z-index: 25; }
+
 /*** anchor tags ***/
 a:link,
 a:visited,

@@ -2,9 +2,13 @@
     <div class="wrapper">
         <nav class="site-nav">
             <div class="trigger">
-                    <a class="page-link" href="https://roynirmal.github.io/">about</a>
-                    <a class="page-link" href="https://roynirmal.github.io/blogs/">blogs</a>
-                    <a class="page-link" href="https://roynirmal.github.io/publications/">publications</a>
+                    <a class="page-link" href="{{ site.baseurl | prepend: site.url }}/">about</a>
+                    <a class="page-link" href="{{ '/blog/' | prepend: site.baseurl | prepend: site.url }}">blogs</a>
+                    {% for page in site.pages %}
+                    {% if page.title and page.url != "/" %}
+                      <a class="page-link" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}">{{ page.title }}</a>
+                    {% endif %}
+                  {% endfor %}
             </div>
         </nav>
     </div>
